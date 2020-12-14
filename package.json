@@ -1,0 +1,19 @@
+{
+  "name": "indesicion-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10"
+  },
+  "scripts": {
+    "convertBabel": "npx babel ./src/app.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react",
+    "convertBabelWatch": "npx babel ./src/app.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
