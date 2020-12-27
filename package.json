@@ -11,8 +11,10 @@
     "@babel/preset-react": "^7.12.10"
   },
   "scripts": {
+    "buildIt": "npx babel ./src/playground/buildIt.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react --watch",
     "convertBabel": "npx babel ./src/app.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react",
-    "convertBabelWatch": "npx babel ./src/app.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react --watch"
+    "convertBabelWatch": "npx babel ./src/playground/es6-classes-1.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react --watch",
+    "live-server": "live-server public"
   },
   "author": "",
   "license": "ISC"
