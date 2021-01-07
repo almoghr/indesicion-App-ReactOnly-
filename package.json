@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "live-server": "^1.2.1"
+  },
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.10",
     "@babel/preset-react": "^7.12.10"
   },
   "scripts": {
     "buildIt": "npx babel ./src/playground/buildIt.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react --watch",
-    "convertBabel": "npx babel ./src/app.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react",
-    "convertBabelWatch": "npx babel ./src/playground/es6-classes-1.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react --watch",
+    "counterApp": "npx babel ./src/playground/counterApp.js -o ./public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react --watch",
+    "indesicion": "babel ./src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "live-server": "live-server public"
   },
   "author": "",
